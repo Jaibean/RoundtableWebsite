@@ -1,12 +1,13 @@
 /****** Layout Section ******/
 
 :root {
-  --main-bg-color: #eeeff0;
+  --main-bg-color: #a5c6b1;
   --text-color-dark: #3d4553;
-  --text-color-light: #eeeff0;
-  --color-pop: #e9cf5c;
-  --navbar-color: #3d4553;
-  --neutral-color: #99a49e;
+  --text-color-light:#d2afae
+  ;
+  --color-pop: #f4c88c;
+  --navbar-color: #5e6464;
+  --neutral-color: #cc883e;
 }
 
 html {
