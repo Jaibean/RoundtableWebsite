@@ -7,8 +7,11 @@
 function selectChallenge() {
     var file = document.getElementById('options').value;
     var newScriptTag = document.createElement('script');
+
+    for (i=0; i< file.length; i++) {
     newScriptTag.src = `scripts/${file}.js`;
     document.head.appendChild(newScriptTag);
+    }
 }
 
 function clearResult() {

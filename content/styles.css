@@ -38,14 +38,18 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2em;
   text-align: center;
+  font-family: 'Indie Flower', cursive;
   color: var(--text-color-light);
 }
 
 .nav-link:hover {
   background-color: var(--main-bg-color);
   color: var(--text-color-dark);
+  border-radius: 10%;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 365px) {
@@ -92,6 +96,7 @@ body {
   padding-top: 20px;
   overflow: hidden;
   text-align: center;
+  position: fixed;
 }
 
 /****** Index page ******/
@@ -121,6 +126,13 @@ body {
 
 /****** About page ******/
 
+.about-container h3{
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 5em;
+  padding-bottom: 40px;
+}
+
 .about-container {
   flex-direction: row;
   justify-content: space-evenly;
@@ -130,19 +142,29 @@ body {
 
 .bio {
   text-align: center;
-  width: 400px;
-  height: 400px;
-  padding: 15px;
+  width: 500px;
+  height: 500px;
+  padding: 2.5%;
+  align-items: center;
   overflow: hidden;
-  border: 1px solid var(--color-pop);
+  font-size: 1.2em;
+  float:left;
 }
 
 .image-container {
   width: 450px;
   height: 500px;
-  border: 1px solid var(--color-pop);
-  border-radius: 50%;
-  box-shadow: 10px 10px 5px 3px rgba(0, 0, 0, 0.1);
+  float: left;
+}
+
+.image-container img{
+  display:block;
+  border-radius: 10px; /* This causes our images to have slightly rounded edges */
+  max-width: 100%; 
+  height: 340px; 
+  margin-left: auto; /* This in combination with margin-right: auto centers our images */
+  margin-right: auto;	/* By specifying block display we can ensure our images are able to be centered */
+  object-fit: cover; /* maintain aspect ratio*/
 }
 
 /****** Challenge Page ******/
