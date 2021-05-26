@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="content/styles.css" />
-    <title>Roundtable</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div id="navbar">
-      <a class="nav-link" href="index.html">Home</a>
 
-      <a class="nav-link" href="about.html">About</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="content/styles.css" />
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>Roundtable</title>
+</head>
 
-      <a class="nav-link" href="challenge.html">Challenge</a>
-    </div>
-    <!-- Main -->
-    <div class="main">
-      <h1>
-        <h2>Select Challenge:</h2>
-        <select onchange="selectChallenge()" id="options">
-          <option>-- Select Date --</option>
-          <option>May5thChallenge</option>
-          <option>May12thChallenge</option>
-        </select>
-      </h1>
+<body>
+  <!-- Navbar -->
+  <div id="navbar">
+    <a class="nav-link" href="index.html">Home</a>
 
-      <div id="result-box"></div>
+    <a class="nav-link" href="about.html">About</a>
 
-      <button type="button" id="clear-btn" onclick="clearResult()">
-        Clear
-      </button>
-    </div>
+    <a class="nav-link" href="challenge.html">Challenge</a>
+  </div>
+  <!-- Main -->
+  <div class="main">
+    <h1>
+      <h2>Select Challenge:</h2>
+      <select onchange="selectChallenge()" id="options">
+        <option>-- Select Date --</option>
+        <option>May5thChallenge</option>
+        <option>May12thChallenge</option>
+      </select>
+    </h1>
 
-    <!-- Footer -->
-    <footer class="footer">&copy;Roundtable 2021</footer>
-    <!-- <script id="challenge-script" src=""></script> -->
-  </body>
-  <script src="scripts/main.js"></script>
+    <div id="result-box"></div>
+
+    <button type="button" id="clear-btn" onclick="clearResult()">
+      Clear
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">&copy;Roundtable 2021</footer>
+  <!-- <script id="challenge-script" src=""></script> -->
+</body>
+<script src="scripts/main.js"></script>
+
 </html>
